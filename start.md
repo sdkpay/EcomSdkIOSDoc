@@ -49,9 +49,9 @@ dependencies: [
 import EcomSdk
 
 Ecom.setup(
-  paymentConfig: SPaymentConfig = SPaymentConfig(),
-  environment: SEnvironment = .prod,
-  resultViewNeeded: Bool = true
+    paymentConfig: SPaymentConfig = SPaymentConfig(),
+    environment: SEnvironment = .prod,
+    resultViewNeeded: Bool = true
 )
 ```
 
