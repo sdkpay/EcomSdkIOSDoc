@@ -29,7 +29,7 @@
 > NSLocationWhenInUseUsageDescription - Если у вас уже используется этот параметр, то дублировать его не нужно
 
 ### Подключение SDK
-Подключите SDK одним из удобных Вам способов: [SPM](https://sdkpay.github.io/EcomSdkIOSDoc/start#SPM) / [Бинарный артефакт](https://sdkpay.github.io/EcomSdkIOSDoc/start#Бинарныйартефакт)
+Подключите SDK одним из удобных Вам способов: [SPM](https://sdkpay.github.io/EcomSdkIOSDoc/start#spm) / [Бинарный артефакт](https://sdkpay.github.io/EcomSdkIOSDoc/start#binary-artifact)
 
 ### SPM
 ```
@@ -38,7 +38,7 @@ dependencies: [
 ]
 ```
 
-### Бинарный артефакт
+### Binary artifact
 Подключить SDK для успешной работы также можно с помощью [бинарного артефакта](https://github.com/sdkpay/EcomSdkPackage). Перетащите скачанный файл **EcomSdk.xcframework** в *Frameworks, Libraries, and Embedded Content*, а также выставите у зависимости параметр *Embed & Sign*
 
 ## Настройка SDK
