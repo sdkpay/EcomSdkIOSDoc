@@ -42,7 +42,13 @@ dependencies: [
 Подключить SDK для успешной работы также можно с помощью [бинарного артефакта](https://github.com/sdkpay/EcomSdkPackage). Перетащите скачанный файл **EcomSdk.xcframework** в *Frameworks, Libraries, and Embedded Content*, а также выставите у зависимости параметр *Embed & Sign*
 
 ## Настройка SDK
-Для инициализации SDK необходимо вызвать метод `setup` и передать в него **[SPaymentConfig](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#SPaymentConfig)**
+Для инициализации SDK необходимо вызвать метод `setup` и передать в него список параметров, указанных в таблице ниже
+
+|Параметр|Дефолтное значение|Описание|
+|-|-|-|
+|paymentConfig|SPaymentConfig(card = true, bindings = true, sbp = true)|Класс содержащий список доступных способов оплаты.  Структура [SPaymentConfig](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#SPaymentConfig)|
+|environment|SEnvironment.prod|Стенд для работы с SDK, подробнее работа со стендами описана в разделе ["Работа в режиме песочницы"](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode)|
+|resultViewNeeded|true|С помощью данного параметра можно отключить отображение экрана статуса операции|
 
 ### Swift
 ```
