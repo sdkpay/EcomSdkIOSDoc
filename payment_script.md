@@ -4,12 +4,10 @@
 ---
 
 ## Сценарий оплаты
-
 Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[SBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#sbankinvoicepaymentrequest)**  
 Результат оплаты будет получен колбеком в виде структуры **[SPayState](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaystate)**
 
 ### Swift
-
 ```
 import EcomSdk
 
@@ -37,7 +35,6 @@ Ecom.payWithBankInvoiceId(paymentRequest: request) { state in
 ```
 
 ### Objective-C
-
 ```
 SBankInvoicePaymentRequest *request = [[SBankInvoicePaymentRequest alloc]
     initWithMerchantLogin:@"ВАШ merchantLogin"
