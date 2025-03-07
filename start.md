@@ -47,7 +47,7 @@ dependencies: [
 |Параметр|Дефолтное значение|Описание|
 |-|-|-|
 |paymentConfig|SPaymentConfig(card = true, bindings = true, sbp = true)|Класс содержащий список доступных способов оплаты.  Структура [SPaymentConfig](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaymentconfig)|
-|environment|SEnvironment.prod|Стенд для работы с SDK, подробнее работа со стендами описана в разделе ["Работа в режиме песочницы"](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox-mode)|
+|environment|SEnvironment.prod|Стенд для работы с SDK, подробнее работа со стендами описана в разделе ["Работа в режиме песочницы"](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode)|
 |resultViewNeeded|true|С помощью данного параметра можно отключить отображение экрана статуса операции|
 
 ### Swift
