@@ -1,7 +1,9 @@
 # [EcomSdkIOSDoc](https://sdkpay.github.io/EcomSdkIOSDoc)
 
-##### [Начало работы](https://sdkpay.github.io/EcomSdkIOSDoc/start) | [Сценарий оплаты](https://sdkpay.github.io/EcomSdkIOSDoc/payment_script) | [Работа в режиме песочницы](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode) | [Вспомогательные структуры данных](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures) | [Актуальная версия SDK](https://sdkpay.github.io/EcomSdkIOSDoc/version)
+#### [Начало работы](https://sdkpay.github.io/EcomSdkIOSDoc/start) | [Сценарий оплаты](https://sdkpay.github.io/EcomSdkIOSDoc/payment_script) | [Работа в режиме песочницы](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode) | [Вспомогательные структуры данных](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures) | [Актуальная версия SDK](https://sdkpay.github.io/EcomSdkIOSDoc/version)
 ---
+
+<br>
 
 # Вспомогательные структуры данных
 
@@ -15,6 +17,8 @@
 |bindings|Bool|true|Нет|Оплата связкой из списка, сформированного после успешной оплаты способом *card*|
 |sbp|Bool|true|Нет|Оплата с помощью СБП (не может быть единственным включенным способом оплаты)|
 
+<br>
+
 ## SBankInvoicePaymentRequest
 
 #### Конфиг для запуска сценария оплаты методом `payWithBankInvoiceId`
@@ -26,7 +30,9 @@
 |bankInvoiceId|String|-|Да|Уникальный номер (идентификатор) заказа в Платежном шлюзе Банка|
 |orderNumber|String|-|Да|Уникальный номер (идентификатор) заказа в системе Клиента|
 
-## SPayState﻿
+<br>
+
+## SPayState
 
 #### Результат выполнения метода `payWithBankInvoiceId`
 
@@ -37,6 +43,7 @@
 |error|Произошла ошибка во время оплаты|
 |cancel|Пользователь закрыл SDK самостоятельно|
 
+<br>
 
 ## Платежные инструменты для работы в режиме песочницы
 

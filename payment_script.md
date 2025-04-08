@@ -1,13 +1,17 @@
 # [EcomSdkIOSDoc](https://sdkpay.github.io/EcomSdkIOSDoc)
 
-##### [Начало работы](https://sdkpay.github.io/EcomSdkIOSDoc/start) | [Сценарий оплаты](https://sdkpay.github.io/EcomSdkIOSDoc/payment_script) | [Работа в режиме песочницы](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode) | [Вспомогательные структуры данных](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures) | [Актуальная версия SDK](https://sdkpay.github.io/EcomSdkIOSDoc/version)
+#### [Начало работы](https://sdkpay.github.io/EcomSdkIOSDoc/start) | [Сценарий оплаты](https://sdkpay.github.io/EcomSdkIOSDoc/payment_script) | [Работа в режиме песочницы](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode) | [Вспомогательные структуры данных](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures) | [Актуальная версия SDK](https://sdkpay.github.io/EcomSdkIOSDoc/version)
 ---
 
-## Сценарий оплаты
+<br>
+
+# Сценарий оплаты
+
 Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[SBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#sbankinvoicepaymentrequest)**  
 Результат оплаты будет получен колбеком в виде структуры **[SPayState](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaystate)**
 
 ### Swift
+
 ```
 import EcomSdk
 
@@ -35,6 +39,7 @@ Ecom.payWithBankInvoiceId(paymentRequest: request) { state in
 ```
 
 ### Objective-C
+
 ```
 SBankInvoicePaymentRequest *request = [[SBankInvoicePaymentRequest alloc]
     initWithMerchantLogin:@"ВАШ merchantLogin"
