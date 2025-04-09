@@ -40,7 +40,7 @@
 
 ```
 dependencies: [
-    .package(url: "https://github.com/sdkpay/EcomSdkPackage", .upToNextMajor(from: "0.5.0"))
+    .package(url: "https://github.com/sdkpay/EcomSdkPackage", .upToNextMajor(from: "1.1.7"))
 ]
 ```
 
@@ -59,6 +59,7 @@ dependencies: [
 |paymentConfig|SPaymentConfig(card = true, bindings = true, sbp = true)|Класс содержащий список доступных способов оплаты.  Структура [SPaymentConfig](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaymentconfig)|
 |environment|SEnvironment.prod|Стенд для работы с SDK, подробнее работа со стендами описана в разделе ["Работа в режиме песочницы"](https://sdkpay.github.io/EcomSdkIOSDoc/sandbox_mode)|
 |resultViewNeeded|true|С помощью данного параметра можно отключить отображение экрана статуса операции|
+|completion|((EcomError?) -> Void)?|Блок, отрабатыващий после инициализации SDK.<br>Структура [EcomError](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#ecomerror)|
 
 ### Swift
 
@@ -68,7 +69,8 @@ import EcomSdk
 Ecom.setup(
     paymentConfig: SPaymentConfig = SPaymentConfig(),
     environment: SEnvironment = .prod,
-    resultViewNeeded: Bool = true
+    resultViewNeeded: Bool = true,
+    completion: ((EcomError?) -> Void)? = nil
 )
 ```
 
@@ -77,5 +79,8 @@ Ecom.setup(
 ```
 #import <EcomSdk/EcomSdk.h>
 
-[Ecom setup];
+[Ecom setupWithPaymentConfig: paymentConfig
+                     enviroment: SEnvironmentProd
+         resultViewNeeded: true
+                     completion: nil]
 ```
