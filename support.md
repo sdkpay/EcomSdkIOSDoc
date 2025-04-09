@@ -21,7 +21,7 @@
 
 <br>
 
-## LocalSessionId
+<!-- ## LocalSessionId
 
 ### Идентификатор сессии в Ecom inApp
 
@@ -32,4 +32,4 @@
 
 - На результирующем экране ошибки:
 
-<img src="docs/assets/img/Error.png" width="200">
+<img src="docs/assets/img/Error.png" width="200">  -->
