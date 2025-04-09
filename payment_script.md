@@ -6,7 +6,7 @@
 
 # Сценарий оплаты
 
-Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[SBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#ecombankinvoicepaymentrequest)**  
+Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[EcomBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#ecombankinvoicepaymentrequest)**  
 Результат оплаты будет получен колбеком в виде структуры **[SPayState](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaystate)**
 
 ### Swift

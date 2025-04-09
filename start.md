@@ -80,7 +80,7 @@ Ecom.setup(
 #import <EcomSdk/EcomSdk.h>
 
 [Ecom setupWithPaymentConfig: paymentConfig
-                     enviroment: SEnvironmentProd
-         resultViewNeeded: true
-                     completion: nil]
+                              enviroment: SEnvironmentProd
+                              resultViewNeeded: true
+                              completion: nil]
 ```
