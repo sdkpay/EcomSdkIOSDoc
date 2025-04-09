@@ -6,7 +6,7 @@
 
 # Сценарий оплаты
 
-Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[SBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#sbankinvoicepaymentrequest)**  
+Для запуска сценария оплаты SDK необходимо необходимо вызвать метод `payWithBankInvoiceId` и передать в него **[SBankInvoicePaymentRequest](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#ecombankinvoicepaymentrequest)**  
 Результат оплаты будет получен колбеком в виде структуры **[SPayState](https://sdkpay.github.io/EcomSdkIOSDoc/data_structures#spaystate)**
 
 ### Swift
@@ -14,11 +14,12 @@
 ```
 import EcomSdk
 
-let request = SBankInvoicePaymentRequest(
+let request = EcomBankInvoicePaymentRequest(
     merchantLogin: "ВАШ merchantLogin",
     bankInvoiceId: "ВАШ bankInvoiceId",
     orderNumber: "ВАШ orderNumber",
-    apiKey: "ВАШ apiKey"
+    apiKey: "ВАШ apiKey",
+    redirectUri: "ВАШ redirectUri"
 )
 
 Ecom.payWithBankInvoiceId(paymentRequest: request) { state in
@@ -40,11 +41,12 @@ Ecom.payWithBankInvoiceId(paymentRequest: request) { state in
 ### Objective-C
 
 ```
-SBankInvoicePaymentRequest *request = [[SBankInvoicePaymentRequest alloc]
+EcomBankInvoicePaymentRequest *request = [[EcomBankInvoicePaymentRequest alloc]
     initWithMerchantLogin:@"ВАШ merchantLogin"
     bankInvoiceId:@"ВАШ bankInvoiceId"
     orderNumber:@"ВАШ orderNumber"
-    apiKey:@"ВАШ apiKey"];
+    apiKey:@"ВАШ apiKey"
+    redirectUri:@"ВАШ redirectUri"];
 
 [Ecom payWithBankInvoiceId:request completion:^(EcomPaymentState state) {
     switch (state) {

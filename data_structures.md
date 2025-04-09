@@ -18,7 +18,7 @@
 
 <br>
 
-## SBankInvoicePaymentRequest
+## EcomBankInvoicePaymentRequest
 
 #### Конфиг для запуска сценария оплаты методом `payWithBankInvoiceId`
 
