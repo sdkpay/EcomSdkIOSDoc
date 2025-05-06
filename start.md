@@ -87,6 +87,7 @@ Ecom.setup(
 
 ### Дополнительно, при инициализации EcomSDK совместно со SPaySDK
 
+Для корректной работы SPaySDK внутри EcomSDK, необходимо реализовать метод `getAuthURL` и передать в него параметр `url` из метода `application` реализуемого в классе `AppDelegate`
 ```
 func application(_ app: UIApplication,
                 open url: URL,
