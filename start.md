@@ -84,7 +84,9 @@ Ecom.setup(
                               resultViewNeeded: true
                               completion: nil]
 ```
+
 ### Дополнительно, при инициализации EcomSDK совместно со SPaySDK
+
 ```
 func application(_ app: UIApplication,
                 open url: URL,
